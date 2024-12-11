@@ -1,8 +1,19 @@
 import React from 'react';
 import { Search} from 'lucide-react';
 import RecipeCard from '../components/RecipeCard';
+import { useEffect, useState } from 'react';
+
+const APP_ID = import.meta.env.VITE_APP_ID;
+const APP_KEY = import.meta.env.VITE_APP_KEY;
 
 const HomePage = () => {
+  const [recipes, setRecipes] = useState([]);
+	const [loading, setLoading] = useState(true);
+
+  useEffect(()=>{
+    fetchRecipes("chiken");
+  },[]);
+
   return <div className='bg-[#faf9fb] p-10 flex-1'>
     <div className='max-w-screen-lg mx-auto'>
       <form>
