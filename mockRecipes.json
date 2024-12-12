@@ -1,0 +1,17 @@
+[
+    {
+      "label": "Chicken Soup",
+      "image": "/1.jpg",
+      "yield": 4,
+      "healthLabels": ["Gluten-free", "Heart-healthy"],
+      "cuisineType": ["american"]
+    },
+    {
+      "label": "Grilled Salmon",
+      "image": "/2.jpg",
+      "yield": 2,
+      "healthLabels": ["Low-carb", "High-protein"],
+      "cuisineType": ["mediterranean"]
+    }
+  ]
+  
